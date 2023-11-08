@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Poppins:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    font-family: Arbutus Slab;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.note{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    color: #FF8D83;
+    font-size: 90px;
+}
+.note a{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.container {
+    display: none;
+    width: 26.875rem;
+    height: 100vh;
+    border: solid 9px black;
+    background-image: url("./images/Vector\ 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* overflow: hidden; */
+    background-position-y: 1px;
+    position: relative;
+    border-radius: 50px;
+    margin-top: -50px;
+    z-index: 6;
+}
+
+.container .texture {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+}
+
+.container .items {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    margin: 0 2rem;
+}
+
+.container .items .second {
+    height: 5.8125rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.container .items .second img {
+    width: 2.875rem;
+    height: 2.875rem;
+}
+
+.container h2 {
+    font-size: 2.6rem;
+    margin-top: 2rem;
+}
+
+.container p {
+    margin-top: 6px;
+    font-size: 1rem;
+}
+
+.container .line {
+    width: 3.8125rem;
+    height: 4px;
+    margin-top: 1rem;
+    border-radius: 20px;
+    stroke-width: 3px;
+    background: #FF8D83;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.login {
+    background-position-y: -250px;
+}
+.signup{
+    background-position-y: -400px;
+}
+
+.login .first {
+    display: flex;
+    flex-direction: column;
+}
+.login .items label {
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-top: 2rem;
+}
+.login .items input{
+    margin-top: 1.2rem;
+    border: 0;
+    border-bottom:solid 2px #FF8D83;
+    padding-bottom: 3px;
+    width: 100%;
+}
+.login .items .first p{
+    color:#FF8D83;
+    margin-top: 1.2rem;
+    align-self: flex-end;
+}
+.login .items .second{
+    height: 10rem;
+}
+.login .items .second {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.login .items .second a {
+    border-radius: 50px;
+    background: #FF8D83;
+    color: #FFF;
+    padding: 1.2rem 2.8rem;
+    font-size: 1rem;
+}
+.login .items .second a:first-child{
+    border: solid 2px #FF8D83;
+    padding: 1.1rem 2.8rem;
+    color: #FF8D83;
+    background: transparent;
+}
+
+@media all and (max-width:600px) {
+    body {
+        font-size: 18px;
+    }
+    .note{
+        display: none;
+    }
+    .container {
+        width: 100vw;
+        display: block;
+        border: 0;
+    }
+}
+
+@media all and (max-width:500px) {
+    body {
+        font-size: 17px;
+    }
+
+}
+
+@media all and (max-width:430px) {
+    body {
+        font-size: 16px;
+    }
+
+}
+
+@media all and (max-width:360px) {
+    body {
+        font-size: 12px;
+    }
+    .container .items .second a{
+        padding: 1rem 1.5rem;
+
+    }
+    .container .items .second a:first-child{
+        padding: 0.9rem 1.5rem;
+    }
+
+}
